@@ -1,3 +1,29 @@
-data
-model
-*.pdf
+# Ignore compiled Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folders
+venv/
+env/
+*.env
+
+# Ignore log files
+*.log
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor-specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore dependencies and build artifacts
+venv/
+dist/
+build/
+*.egg-info/
+*.egg
+*.egg-info
