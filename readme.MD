@@ -215,6 +215,18 @@ Here is an explanation of the parameters used in the command:
 bash prediction.sh
 ```
 
+python run_beit3_finetuning.py \
+        --model beit3_base_patch16_480 \
+        --input_size 480 \
+        --task vqav2 \
+        --batch_size 32 \
+        --sentencepiece_model beit3.spm \
+        --finetune beit3_base_patch16_480_vqa.pth \
+        --data_path dataset \
+        --output_dir your_prediction \
+        --eval \
+        --dist_eval
+
 Here is an explanation of the parameters used in the command:
 
 - `--model beit3_base_patch16_480`: This specifies the model architecture to use. In this case, the BEiT model with base configuration, patch size of 16 and input size of 480 is used.
