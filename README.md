@@ -76,7 +76,7 @@ Here is an explanation of the parameters used in the command:
 - `> log_freeze.txt 2>&1`: This directs the output and error logs to a file named `log_freeze.txt`.
 
 ### Results
-- Model weights fpr COCO captioning dataset can be found [here](https://drive.google.com/drive/u/1/folders/1q8Z2HDEZvCxqPvRuJCBJdXblgOXIWDZK)
+- Model weights for COCO captioning dataset can be found [here](https://drive.google.com/drive/u/1/folders/1q8Z2HDEZvCxqPvRuJCBJdXblgOXIWDZK)
 - Tensorboard logs for COCO captioning dataset can be found [here](COCO_Image_captioning/log_freeze)
 - COCO captioning log file can be found [here](COCO_Image_captioning/log_freeze.txt)
 
