@@ -31,4 +31,4 @@ https://arxiv.org/pdf/2208.10442.pdf
 
 # References
 
-PyTorch documentation
+[PyTorch documentation](https://pytorch.org/docs/stable/index.html)
