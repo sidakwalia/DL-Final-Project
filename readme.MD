@@ -8,12 +8,16 @@ There are two different methods used here:
 2. Visual Question Answering
 
 ## Fine-tuning BEiT-3 on Image Captioning 
+- In order to train BEiT model for COCO captioning dataset, please follow the official instruction [here](https://github.com/sidakwalia/DL-Final-Project/blob/main/COCO_Image_captioning/get_started/get_started_for_captioning.md).
+
 Command used to run the model: 
-
-bash
+```bash
 torchrun --nproc_per_node=1 run_beit3_finetuning.py --model beit3_base_patch16_480 --input_size 480 --task coco_captioning --batch_size 32 --layer_decay 1.0 --lr 4e-5 --randaug --epochs 10 --warmup_epochs 1 --drop_path 0.1 --sentencepiece_model beit3.spm --finetune beit3_base_patch16_224.pth --data_path /COCO --output_dir ./output_freeze --log_dir ./log_freeze --weight_decay 0.05 --seed 42 --save_ckpt_freq 1 --num_max_bpe_tokens 32 --captioning_mask_prob 0.7 --drop_worst_after 12000 --dist_eval  --enable_deepspeed > log_freeze.txt 2>&1
+```
 
-- Pretrained model weights COCO captioning dataset can be found [here]https://drive.google.com/drive/u/0/folders/1q8Z2HDEZvCxqPvRuJCBJdXblgOXIWDZK
+- Pretrained model weights COCO captioning dataset can be found [here](https://drive.google.com/drive/u/1/folders/1q8Z2HDEZvCxqPvRuJCBJdXblgOXIWDZK)
+- Tensorboard for COCO captioning dataset can be found [here](https://github.com/sidakwalia/DL-Final-Project/tree/main/COCO_Image_captioning/log_freeze)
+- COCO captioning log file can be found [here](https://github.com/sidakwalia/DL-Final-Project/blob/main/COCO_Image_captioning/log_freeze.txt)
 
 
 ## Fine-tuning BEiT-3 on VQAv2 (Visual Question Answering)
@@ -65,17 +69,17 @@ VQAv2Dataset.make_dataset_index(
     tokenizer=tokenizer,
     annotation_data_path="/path/to/your_data/vqa",
 )
-```bash
+```
 
 
 To fine-tune the model on the COCO dataset, run the following command:
 
 ```bash
 bash bash.sh
-
+```
 This command consist of this below :
 
-
+```bash
 python3 run_beit3_finetuning.py \
         --model beit3_base_patch16_480 \
         --input_size 480 \
@@ -99,6 +103,7 @@ python3 run_beit3_finetuning.py \
         --task_head_lr_weight 20 \
         --opt_betas 0.9 0.98 \
         --enable_deepspeed
+```
 
 Once the model has been fine-tuned, you can make predictions on the COCO dataset by running:
 
@@ -148,8 +153,9 @@ Here is an explanation of the parameters used in the command:
 
 - `--enable_deepspeed`: Enable DeepSpeed for training acceleration.
 
-
+```bash
 bash prediction.sh
+```
 
 Here is an explanation of the parameters used in the command:
 
