@@ -255,8 +255,10 @@ Here is an explanation of the parameters used in the command:
 
 - `--dist_eval`: This flag is used to enable distributed evaluation if multiple GPUs are available.
 
-
-
+### Results
+- Model weights can be found [here](https://drive.google.com/drive/folders/1eQTvkhsmx1VZ-UNRoa72WlA1z510tqHI?usp=sharing)
+- Tensorboard logs can be found [here]
+- COCO VQAv2 log file can be found [here](COCO_VQAv2/log.txt)
 
 # Model Architecture
 
