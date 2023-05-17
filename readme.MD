@@ -248,3 +248,19 @@ Here is an explanation of the parameters used in the command:
 - `--eval`: This flag indicates that the model should be evaluated after training.
 
 - `--dist_eval`: This flag is used to enable distributed evaluation if multiple GPUs are available.
+
+
+
+
+# Model Architecture
+
+The Beit-3 model architecture used in this project is based on this paper -
+Wenhui Wang, Hangbo Bao, Li Dong, Johan Bjorck, Zhiliang Peng, Qiang Liu
+Kriti Aggarwal, Owais Khan Mohammed, Saksham Singhal, Subhojit Som, Furu Wei
+
+https://arxiv.org/pdf/2208.10442.pdf
+
+
+# References
+
+[PyTorch documentation](https://pytorch.org/docs/stable/index.html)
