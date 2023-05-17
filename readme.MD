@@ -1,5 +1,12 @@
 # Fine Tuning Image Transformers
 
+# Project Structure
+| Directory / File | Description |
+|-----------------|-----------------|
+| COCO_Image_captioning | Contains Beit-3 model trained on COCO captioning images | 
+| COCO_VQAv2 | Contains Beit-3 model trained on VQAv2 images | 
+
+
 We have fine-tuned our model on the COCO dataset for image captioning and Visual Question Answering. We have used the BeiT-3 model for visual transformers.
 
 There are two different methods used here:
