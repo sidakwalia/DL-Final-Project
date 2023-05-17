@@ -14,6 +14,8 @@ There are two different methods used here:
 1. Image Captioning
 2. Visual Question Answering
 
+A detailed report can be found [here](Report.pdf)
+
 ## Fine-tuning BEiT-3 on Image Captioning 
 - In order to train BEiT model for COCO captioning dataset, please follow the official instruction [here](https://github.com/sidakwalia/DL-Final-Project/blob/main/COCO_Image_captioning/get_started/get_started_for_captioning.md).
 
@@ -215,6 +217,7 @@ Here is an explanation of the parameters used in the command:
 bash prediction.sh
 ```
 
+```bash
 python run_beit3_finetuning.py \
         --model beit3_base_patch16_480 \
         --input_size 480 \
@@ -226,6 +229,7 @@ python run_beit3_finetuning.py \
         --output_dir your_prediction \
         --eval \
         --dist_eval
+```
 
 Here is an explanation of the parameters used in the command:
 
@@ -263,4 +267,5 @@ https://arxiv.org/pdf/2208.10442.pdf
 
 # References
 
-[PyTorch documentation](https://pytorch.org/docs/stable/index.html)
+- [PyTorch documentation](https://pytorch.org/docs/stable/index.html)
+- [BEiT-3 Official Repo](https://github.com/microsoft/unilm/tree/master/beit3)
