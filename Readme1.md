@@ -19,3 +19,11 @@ COCO captioning: Tensorboard logs https://github.com/sidakwalia/DL-Final-Project
 
 COCO captioning log file: https://github.com/sidakwalia/DL-Final-Project/blob/main/COCO_Image_captioning/log_freeze.txt
 
+
+# Model Architecture
+
+The Beit-3 model architecture used in this project is based on this paper -
+Wenhui Wang, Hangbo Bao, Li Dong, Johan Bjorck, Zhiliang Peng, Qiang Liu
+Kriti Aggarwal, Owais Khan Mohammed, Saksham Singhal, Subhojit Som, Furu Wei
+
+https://arxiv.org/pdf/2208.10442.pdf
